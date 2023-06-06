@@ -1,0 +1,9 @@
+select name,        
+  case 
+    when review > 4.5 then "extraordinary"
+    when review > 4 then "excellent"
+    when review > 3 then "good"
+    when review > 2 then "fair"
+    else "poor"
+  end as 'review'
+from nomnom;
